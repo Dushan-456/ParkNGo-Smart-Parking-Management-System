@@ -1,13 +1,13 @@
 import 'dotenv/config';
 import express from 'express';
 import rootRouter from './Routes/index.mjs';
-import dbConnect from './Src/db/db_config.mjs';
+import dbConnect from './src/db/db_config.mjs';
 
 
 
 const server = express()
 const PORT = process.env.PORT || 5001
-
+//
 server.use(express.json())
 // server.use(cors());
 //ROUTE CONNECT 
